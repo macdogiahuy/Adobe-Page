@@ -6,7 +6,6 @@
 body {
   color: #2b2c48;
   font-family: 'Jost', sans-serif;
-  background-image: url(https://images.unsplash.com/photo-1566738780863-f9608f88f3a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -24,7 +23,7 @@ body {
   position: relative;
   z-index: 1;
   overflow-x: hidden;
-  /* background-color: white; */
+  background-color: rgb(255, 255, 255);
   display: flex;
   transition: 0.3s;
   flex-direction: column;
@@ -50,12 +49,10 @@ body {
 .card.is-active .card-header {
   height: 80px;
 }
-
 .card.is-active .card-cover {
   height: 100px;
   top: -50px;
 }
-
 .card.is-active .card-avatar {
   transform: none;
   left: 20px;
@@ -63,18 +60,15 @@ body {
   height: 50px;
   bottom: 10px;
 }
-
 .card.is-active .card-fullname,
 .card.is-active .card-jobtitle {
   left: 86px;
   transform: none;
 }
-
 .card.is-active .card-fullname {
   bottom: 18px;
   font-size: 19px;
 }
-
 .card.is-active .card-jobtitle {
   bottom: 16px;
   letter-spacing: 1px;
@@ -113,7 +107,9 @@ body {
   height: 100px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
+  -o-object-position: center;
   object-position: center;
+  -o-object-fit: cover;
   object-fit: cover;
   position: absolute;
   bottom: 0;
@@ -166,7 +162,7 @@ body {
 
 .card-desc {
   line-height: 1.6;
-  color: white;
+  color: #636b6f;
   font-size: 14px;
   margin: 0;
   font-weight: 400;
@@ -180,7 +176,7 @@ body {
   margin-bottom: 30px;
 }
 .card-social svg {
-  fill: #eaecf0;
+  fill: rgb(165, 181, 206);
   width: 16px;
   display: block;
   transition: 0.3s;
@@ -194,13 +190,12 @@ body {
   align-items: center;
   justify-content: center;
   transition: 0.3s;
-  background-color: rgba(237, 238, 240, 0.05);
+  background-color: rgba(93, 133, 193, 0.05);
   border-radius: 50%;
   margin-right: 10px;
 }
 .card-social a:hover svg {
-  fill: #4d70a5;
-  transform: scale(1.2);
+  fill: #637faa;
 }
 .card-social a:last-child {
   margin-right: 0;
@@ -208,7 +203,7 @@ body {
 
 .card-buttons {
   display: flex;
-  /* background-color: #fff; */
+  background-color: #fff;
   margin-top: auto;
   position: sticky;
   bottom: 0;
@@ -216,13 +211,15 @@ body {
 }
 .card-buttons button {
   flex: 1 1 auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   background: 0;
   font-size: 13px;
   border: 0;
   padding: 15px 5px;
   cursor: pointer;
-  color: #ffffff;
+  color: #5c5c6d;
   transition: 0.3s;
   font-family: 'Jost', sans-serif;
   font-weight: 500;
@@ -231,8 +228,8 @@ body {
 }
 .card-buttons button.is-active,
 .card-buttons button:hover {
-  /* color: #4d77d3;
-  border-bottom: 3px solid #8a84ff; */
+  color: #2b2c48;
+  border-bottom: 3px solid #8a84ff;
   background: linear-gradient(
     to bottom,
     rgba(127, 199, 231, 0) 0%,
@@ -258,13 +255,16 @@ body {
     opacity: 1;
   }
 }
-
 .card-timeline {
   margin-top: 30px;
   position: relative;
 }
 .card-timeline:after {
-  background: linear-gradient(to top, rgba(134, 214, 243, 0) 0%, #516acc 100%);
+  background: linear-gradient(
+    to top,
+    rgba(134, 214, 243, 0) 0%,
+    rgb(81, 106, 204) 100%
+  );
   content: '';
   left: 42px;
   width: 2px;
@@ -359,4 +359,4 @@ body {
   font-weight: 500;
   font-family: 'Jost', sans-serif;
   transition: 0.3s;
-}
+} /*# sourceMappingURL=profile.css.map */
