@@ -71,3 +71,15 @@ const toggleButton = document.querySelector('.dark-light');
 toggleButton.addEventListener('click', () => {
   document.body.classList.toggle('light-mode');
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const portfolioLink = document.getElementById('portfolio-link');
+  const profileSection = document.getElementById('profile-content');
+  const homeSection = document.getElementById('home-content');
+
+  portfolioLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    profileSection.style.display = 'block';
+    document.getElementById('home-content').style.display = 'none';
+  });
+});

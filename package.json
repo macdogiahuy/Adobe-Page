@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:scss": "node-sass index.scss style.css"
+    "build:scss": "node-sass profile.scss profile.css"
   },
   "keywords": [],
   "author": "",
