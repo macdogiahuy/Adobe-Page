@@ -118,6 +118,7 @@ body {
 }
 
 .card-fullname {
+  color: #2f3033;
   position: absolute;
   bottom: 0;
   font-size: 22px;
@@ -129,6 +130,7 @@ body {
 }
 
 .card-jobtitle {
+  color: gray;
   position: absolute;
   bottom: 0;
   font-size: 11px;
@@ -154,6 +156,7 @@ body {
   font-weight: 700;
   font-size: 13px;
   margin-bottom: 8px;
+  color: gray;
 }
 
 .card-content {
